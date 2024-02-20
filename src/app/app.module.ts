@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwnerModule } from './components/owner/owner.module';
+import { Navbar } from './shared/navbar/navbar';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { OwnerModule } from './components/owner/owner.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OwnerModule
+    OwnerModule,
+    Navbar,
   ],
   providers: [],
   bootstrap: [AppComponent]
