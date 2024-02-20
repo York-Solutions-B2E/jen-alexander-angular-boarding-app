@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwnerModule } from './components/owner/owner.module';
-import { Navbar } from './shared/navbar/navbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { Navbar } from './shared/navbar/navbar';
     BrowserModule,
     AppRoutingModule,
     OwnerModule,
-    Navbar,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
